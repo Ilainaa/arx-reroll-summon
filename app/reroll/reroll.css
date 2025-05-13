@@ -1,0 +1,79 @@
+.menubar {
+    background-color: #000000; /* Example background color */
+    width: 100%; /* Make menubar full width */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0; 
+}
+
+.brand-name {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.brand-name:hover{
+    color: red;
+}
+
+.nav-logo,.nav-brand {
+    cursor: default;
+}
+
+.nav-logo {
+    height: 40px; /* Base height from inline style */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for transform change */
+}
+
+.nav-logo:hover {
+    /* height: 50px; */ /* Remove this */
+    transform: scale(1.25); /* Scale the logo up by 25% (50px / 40px = 1.25) */
+}
+
+
+.nav-link {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: 1px solid transparent; /* Transparent border to prevent layout shift */
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: red;
+    border: 1px solid red; /* Border appears on hover */
+}
+
+.boxtTrait_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(8, auto);   /* 8 rows */
+    gap: 0px;
+    
+}
+
+.boxtTrait_item{
+    width: 250px;
+    height: 40px;
+    padding: 8px 12px;
+    background-color: #000000; 
+    border: 1px solid ; 
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: default;
+}
+
+.Trait_logo{
+    margin: -10px ;
+    padding: 2px;
+    height: 35px;
+}
