@@ -337,7 +337,7 @@ export default function Page() {
                   marginTop: '15px', // ระยะห่างจากส่วน Description
                   borderTop: '1px solid #7c7c7c',
                 }}>
-                {rollHistory.slice(0, 300).map((traitItem, index) => (
+                {rollHistory.slice(0, 312).map((traitItem, index) => (
                   <img
                     key={`${traitItem.name}-${index}`} // ใช้ key ที่ unique สำหรับแต่ละรูป
                     src={`/picture/reroll/${traitItem.imageName}`}
