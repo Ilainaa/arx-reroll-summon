@@ -1,0 +1,40 @@
+.logo-pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+.reroll-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, 
+    #ff00dd 0%, 
+    #e600ff 30%, 
+    rgb(255, 43, 142) 50%, 
+    #e600ff 80%, 
+    #ff00dd 100%);
+  background-size: 200% auto;
+  background-position: 100% 0%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-position 0.4s ease, transform 0.2s ease;
+}
+
+.reroll-button:hover {
+  background-position: 0% 0%;
+  transform: scale(1.05);
+}
+

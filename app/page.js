@@ -3,6 +3,8 @@
 
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import './main.css'
+
 
 export default function Page() {
   const router = useRouter()
@@ -16,51 +18,57 @@ export default function Page() {
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '100vh',
-      padding: '20px',
-      position: 'relative' // Needed for absolute positioning of the footer text if not using fixed
-    }}>
-      <img src="/picture/logo_arx.jpg" alt="Arx Logo" style={{ height: '250px', marginBottom: '30px' }} />
-      <div> {/* Container for buttons */}
-        <button
-          onClick={handleSummonClick}
-          style={{
-            marginRight: '10px', // Space between buttons
-            padding: '12px 24px',
-            fontSize: '16px',
-            cursor: 'pointer' // Changes cursor to indicate it's clickable
-          }}
-        >
-          Summon
-        </button>
-        <button
-          onClick={handleRerollClick}
-          style={{
-            padding: '12px 24px',
-            fontSize: '16px',
-            cursor: 'pointer'
-          }}
-        >
-          Reroll
-        </button>
-      </div>
+    <>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'fixed', // Fixed position to cover the entire viewport
+          right: '0',
+          bottom: '0',
+          minWidth: '100%',
+          minHeight: '100%',
+          width: 'auto',     // Maintain aspect ratio
+          height: 'auto',    // Maintain aspect ratio
+          zIndex: '-1',      // Place it behind other content
+          objectFit: 'cover' // Cover the area, cropping if necessary
+        }}
+      >
+        <source src="/video/ARX Trailer.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div style={{
-        position: 'fixed', // Positions relative to the viewport
-        bottom: '10px',    // 10px from the bottom
-        right: '10px',     // 10px from the right
-        textAlign: 'right',
-        fontSize: '12px',  // Adjust font size as needed
-        color: '#555',
-        cursor: 'default'      // Adjust color as needed
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        padding: '20px',
+        position: 'relative' // Needed for z-index stacking context if children need it
       }}>
-        By Thanawat Lumpool<br />
-        (ธนวัฒน์ ลำพูน)
+        <img src="/picture/240.png" alt="Arx Logo"  className="logo-pulse" style={{ height: '250px', marginBottom: '30px' }} />
+        <div> {/* กล่องที่สามารถเพิ่มปุ่มได้*/}
+
+          <button onClick={handleRerollClick} className="reroll-button">
+            Reroll
+          </button>
+
+        </div>
+        <div style={{
+          position: 'fixed', // Positions relative to the viewport
+          bottom: '10px',    // 10px from the bottom
+          right: '10px',     // 10px from the right
+          textAlign: 'right',
+          fontSize: '12px',  // Adjust font size as needed
+          color: '#555',
+          cursor: 'default'      // Adjust color as needed
+        }}>
+          By Thanawat Lumpool<br />
+          (ธนวัฒน์ ลำพูน)
+        </div>
       </div>
-    </div>
+    </>
   )
 }

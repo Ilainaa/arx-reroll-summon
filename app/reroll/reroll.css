@@ -6,6 +6,11 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 0; 
+    position: fixed; /* Added semicolon */
+    top: 0; /* Pin to the top of the viewport */
+    left: 0; /* Pin to the left of the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    z-index: 1000; /* Ensure menubar stays on top of other content */
 }
 
 .brand-name {
@@ -47,6 +52,8 @@
 }
 
 .nav-link:hover {
+    padding: 8px 12px;
+    background-color: #dadada;
     color: red;
     border: 1px solid red; /* Border appears on hover */
 }
@@ -55,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-template-rows: repeat(8, auto);   /* 8 rows */
-    gap: 0px;
+    gap: 6px;
     
 }
 
@@ -63,11 +70,10 @@
     width: 250px;
     height: 40px;
     padding: 8px 12px;
-    background-color: #000000; 
-    border: 1px solid ; 
+    background-color: #3c3a3a; 
     border-radius: 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #ffffff;
     cursor: default;
 }
@@ -76,4 +82,174 @@
     margin: -10px ;
     padding: 2px;
     height: 35px;
+}
+
+.historybox_traits{
+    display: flex;
+    margin-top: 50px;
+    max-width: 635px;
+    max-height: 1000px;
+    height: 245px;
+    overflow: auto; 
+
+    
+}
+
+.trait_reroll_head {
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  rgb(163, 37, 163) 0%,
+  rgb(255, 105, 180) 25%,
+  rgb(255, 0, 0) 50%,
+  rgb(255, 105, 180) 75%,
+  rgb(163, 37, 163) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: trait-gradient-shift 20s linear infinite;
+}
+
+.Mythic-text {
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  rgb(0, 255, 255) 0%,
+  rgb(21, 58, 195) 16.6%,
+  rgb(163, 37, 163) 33.3%,
+  rgb(255, 105, 180) 50%,
+  rgb(255, 0, 0) 66.6%,
+  orange 83.3%,
+  rgb(0, 255, 255) 100%
+);
+
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: trait-gradient-shift 20s linear infinite;
+}
+
+.Golden-text {
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  rgb(255, 196, 0) 0%,
+  rgb(188, 144, 0) 30%,
+  rgb(255, 196, 0) 50%,
+  rgb(188, 144, 0) 80%,
+  rgb(255, 196, 0) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: trait-gradient-shift 20s linear infinite;
+}
+
+.Epic-text {
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  rgb(219, 0, 219) 0%,
+  rgb(255, 96, 255) 30%,
+  rgb(219, 0, 219) 50%,
+  rgb(255, 96, 255) 80%,
+  rgb(219, 0, 219) 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: trait-gradient-shift 20s linear infinite;
+}
+
+.Rare-text {
+  color: transparent;
+  background-image: linear-gradient(90deg, 
+  blue 0%,
+  rgb(79, 79, 255) 30%,
+  blue 50%,
+  rgb(79, 79, 255) 80%,
+  blue 100%
+  );
+  background-size: 300% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: trait-gradient-shift 20s linear infinite;
+}
+
+@keyframes trait-gradient-shift {
+  100% {
+    background-position: 0% 0%;
+  }
+  0% {
+    background-position: 300% 0%; /* เปลี่ยนจาก 100% เป็น 300% เพื่อให้ลูปเนียนขึ้น */
+  }
+}
+
+.animated-button {
+  border: 2px solid #7bd8ff;
+  border-radius: 12px;
+  /* ไล่สีพื้นหลังแทน background-color ธรรมดา */
+  background-image: linear-gradient(90deg,
+    rgb(0, 234, 255) 0%,
+    rgb(79, 79, 255) 30%,
+    blue 50%,
+    rgb(79, 79, 255) 80%,
+    rgb(0, 234, 255) 100%);
+  font-size: 14px;
+  font-weight: bold;
+  color: white; /* สีข้อความเป็นขาว */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background-size: 200% 100%;
+  background-position: 90% 0%;
+}
+
+.animated-button:hover {
+  font-size: 16px;
+  background-position: 50% 0%; /* ขยับไล่สีเล็กน้อยเพื่อเพิ่ม effect ตอน hover */
+}
+
+
+
+
+.animated-select {
+  border: 2px solid #7bd8ff;
+  border-radius: 12px;
+  /* ไล่สีพื้นหลังแทน background-color ธรรมดา */
+  background-image: linear-gradient(90deg,
+    rgb(0, 234, 255) 0%,
+    rgb(79, 79, 255) 30%,
+    blue 50%,
+    rgb(79, 79, 255) 80%,
+    rgb(0, 234, 255) 100%);
+  font-size: 14px;
+  font-weight: bold;
+  color: white; /* สีข้อความเป็นขาว */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background-size: 200% 100%;
+  background-position: 90% 0%;
+}
+
+.animated-select option {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+
+.animated-select:hover {
+    font-size: 16px;
+  background-position: 50% 0%; /* ขยับไล่สีเล็กน้อยเพื่อเพิ่ม effect ตอน hover */
 }

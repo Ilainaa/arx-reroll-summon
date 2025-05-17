@@ -24,6 +24,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: black;
+  color: white; /* แนะนำให้เปลี่ยนสีตัวอักษรด้วย */
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
