@@ -48,7 +48,7 @@ export default function Page() {
         padding: '20px',
         position: 'relative' // Needed for z-index stacking context if children need it
       }}>
-        <img src="/picture/240.png" alt="Arx Logo"  className="logo-pulse" style={{ height: '250px', marginBottom: '30px' }} />
+        <img src="/picture/logo_arx.png" alt="Arx Logo"  className="logo-pulse" style={{ height: '250px', marginBottom: '30px' }} />
         <div> {/* กล่องที่สามารถเพิ่มปุ่มได้*/}
 
           <button onClick={handleRerollClick} className="reroll-button">
