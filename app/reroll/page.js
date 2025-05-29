@@ -239,7 +239,7 @@ export default function Page() {
                     src={`/picture/reroll/${trait.imageName}`}
                     alt={trait.name}
                     className="Trait_logo"
-                    style={{ width: '40px', height: '40px', marginRight: '10px' }} // Image on the left with some margin
+                    style={{ maxWidth: '40px', maxHeight: '40px', marginRight: '10px' }} // Image on the left with some margin
                   />
                   <div
                     className={
@@ -252,7 +252,7 @@ export default function Page() {
                   > {/* Name takes available space and centers its text */}
                     {trait.name}
                   </div>
-                  <div style={{ marginLeft: '10px', minWidth: '50px', textAlign: 'right' }}> {/* Percentage on the right with some margin and min-width for alignment */}
+                  <div className='percentage'> {/* Percentage on the right with some margin and min-width for alignment */}
                     {trait.percentage}
                   </div>
                 </div>

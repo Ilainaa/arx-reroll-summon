@@ -82,6 +82,14 @@
     height: 35px;
 }
 
+.percentage{
+    min-width: 50px;
+    margin-left: auto;
+    text-align: right;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
 .historybox_traits{
     display: flex;
     margin-top: 50px;
@@ -473,6 +481,8 @@ body {
   .Trait_logo {
     height: 26px; /* ลดขนาดโลโก้ */
   }
+
+  
 }
 
 /* Media Queries สำหรับหน้าจอขนาดเล็ก (Mobile) */
@@ -498,6 +508,13 @@ body {
   }
   .Trait_logo {
     height: 26px; /* ลดขนาดโลโก้ */
+  }
+
+  .percentage{
+    min-width: 40px;
+    text-align: right;
+    font-size: 10px;
+    color: #ffffff;
   }
   
   .trait-description-container {
@@ -538,8 +555,8 @@ body {
   }
 }
 
-/* Media Queries สำหรับอุปกรณ์ขนาดเล็กมาก */
-@media screen and (max-width: 480px) {
+/* Media Queries สำหรับอุปกรณ์ขนาดเล็กมากๆๆๆ */
+@media screen and (max-width: 412px) {
   .main-container {
     padding: 8px;
   }
@@ -554,15 +571,18 @@ body {
   .boxtTrait_item {
     height: auto; /* ให้ความสูงปรับตามเนื้อหา */
     min-height: 0; /* ยกเลิก min-height อื่นที่อาจจะใหญ่กว่า */
-    font-size: 14px; /* ลดขนาดฟอนต์ */
+    font-size: 20px; /* ลดขนาดฟอนต์ */
     padding: 6px 8px; /* ลด padding */
   }
   .Trait_logo {
     height: 26px; /* ลดขนาดโลโก้ */
   }
   
-  .Trait_logo {
-    height: 25px;
+  .percentage{
+    min-width: 40px;
+    text-align: right;
+    font-size: 10px;
+    color: #ffffff;
   }
   
   .trait-percentage {
@@ -601,14 +621,16 @@ body {
   }
 
   .boxtTrait_item {
+    width: 140px;
     height: auto; /* ให้ความสูงปรับตามเนื้อหา */
     min-height: 0; /* ยกเลิก min-height อื่นที่อาจจะใหญ่กว่า */
-    font-size: 14px; /* ลดขนาดฟอนต์ */
+    font-size: 12px; /* ลดขนาดฟอนต์ */
     padding: 6px 8px; /* ลด padding */
   }
   .Trait_logo {
     height: 26px; /* ลดขนาดโลโก้ */
   }
+
   
   .historybox_traits {
     height: 120px;
@@ -647,6 +669,7 @@ body {
   .Trait_logo {
     height: 22px; /* ลดขนาดโลโก้อีก */
   }
+
   
   .historybox_traits {
     height: 80px;
