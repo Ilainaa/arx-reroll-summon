@@ -201,8 +201,8 @@
   border-radius: 12px;
   /* ไล่สีพื้นหลังแทน background-color ธรรมดา */
   background-image: linear-gradient(90deg,
-    rgb(101, 255, 98) 0%,
-    rgb(78, 255, 61) 30%,
+    rgb(44, 255, 40) 0%,
+    rgb(60, 253, 42) 30%,
     rgb(18, 219, 0) 50%,
     rgb(3, 155, 0) 80%,
     rgb(3, 155, 0) 100%);
@@ -218,7 +218,7 @@
 }
 
 .animated-button-single:hover {
-  font-size: 18px;
+  font-size: 16px;
   background-position: 100% 0%; /* ขยับไล่สีเล็กน้อยเพื่อเพิ่ม effect ตอน hover */
 }
 
@@ -244,7 +244,7 @@
 }
 
 .animated-button-reroll-for-trait:hover {
-  font-size: 18px;
+  font-size: 16px;
   background-position: 100% 0%; /* ขยับไล่สีเล็กน้อยเพื่อเพิ่ม effect ตอน hover */
 }
 
@@ -270,7 +270,7 @@
 }
 
 .animated-button-reset:hover {
-  font-size: 18px;
+  font-size: 16px;
   background-position: 100% 0%; /* ขยับไล่สีเล็กน้อยเพื่อเพิ่ม effect ตอน hover */
 }
 
@@ -283,12 +283,13 @@
   height: 40px;
   flex-grow: 1;
   text-align: center;
-  border: 1px solid #ccc; /* ตัวอย่าง */
+  border: 2px solid #ccc; /* ตัวอย่าง */
   border-radius: 12px;    /* ตัวอย่าง */
   /* ไล่สีพื้นหลังแทน background-color ธรรมดา */
+  background-color: #ffffff;
   background-image: 
     url("/picture/arrow_down.svg"); /* ไอคอนลูกศรเริ่มต้น */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: rgb(0, 0, 0); /* สีข้อความเป็นขาว */
   cursor: pointer;
@@ -304,11 +305,6 @@
   background-color: white;
   color: black;
   font-size: 14px;
-}
-
-.animated-select:hover {
-  font-size: 16px;
-  /* ไม่จำเป็นต้องกำหนด background-position ใหม่ หากลูกศรไม่เปลี่ยนแปลงตำแหน่งเมื่อ hover */
 }
 
 .animated-select:focus {
