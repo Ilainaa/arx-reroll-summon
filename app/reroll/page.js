@@ -296,7 +296,6 @@ export default function Page() {
                 className='animated-select'
                 value={selectedTraitForReroll}
                 onChange={(e) => setSelectedTraitForReroll(e.target.value)}
-                style={{ padding: '10px 10px', width: '90px', minWidth: '100px', flexGrow: 1, textAlign: 'center' }}
                 disabled={isRerolling} // ปิดใช้งาน select เมื่อกำลังสุ่ม
               >
                 <option value="Mythic Trait">Mythic Trait</option>
