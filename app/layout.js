@@ -15,15 +15,19 @@ export const metadata = {
   title: "Anime Ranger X | Test Reroll", // เปลี่ยนชื่อเว็บตรงนี้
   description: "Test Reroll feature for Anime Ranger X", // สามารถเปลี่ยนคำอธิบายเว็บได้ด้วย (optional)
   icons: {
-    icon: '/picture/icon_logo_arx.png', // ระบุ path ไปยัง icon ของคุณ (ต้องอยู่ใน public folder)
-    // apple: '/apple-icon.png', // ตัวอย่างเพิ่มเติมสำหรับ apple touch icon (optional)
+    icon: [
+      { url: '/picture/favicon.ico', type: 'image/x-icon', sizes: 'any' }, // แนะนำให้มีไฟล์ favicon.ico ใน public/
+      { url: '/picture/icon_logo_arx.png', type: 'image/png', sizes: 'any' }, // ใช้ path เดิมของคุณ
+    ],
+    apple: '/apple-touch-icon.png', // หากคุณมี apple-touch-icon.png ใน public/
   },
   openGraph: {
     title: 'Anime Ranger X | Test Reroll', // ชื่อที่จะแสดงพร้อมลิงก์ (ควรตรงกับ title หลัก)
     description: 'Test Reroll feature for Anime Ranger X', // คำอธิบายสั้นๆ
     images: [
       {
-        url: '/picture/logo_arx.png', // <<<< แก้ไขตรงนี้: ใส่ URL เต็มหรือ path ไปยังรูปภาพที่คุณต้องการให้แสดง
+        // แนะนำให้ใช้ URL เต็มสำหรับ Open Graph images
+        url: '/picture/logo_arx.png',
         width: 800, // (Optional) ความกว้างของรูปภาพ
         height: 600, // (Optional) ความสูงของรูปภาพ
         alt: 'Anime Ranger X | Test Reroll', // (Optional) คำอธิบายรูปภาพ
