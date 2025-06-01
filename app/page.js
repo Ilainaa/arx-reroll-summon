@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <>
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -38,7 +38,7 @@ export default function Page() {
       >
         <source src="/video/ARX Trailer.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
