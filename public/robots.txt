@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arx-test-reroll.vercel.app/sitemap.xml
