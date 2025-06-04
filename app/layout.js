@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Anime Ranger X | Test Reroll", // เปลี่ยนชื่อเว็บตรงนี้
-  description: "Test Reroll feature for Anime Ranger X", // สามารถเปลี่ยนคำอธิบายเว็บได้ด้วย (optional)
+  title: "Anime Ranger X - Test Reroll", // เปลี่ยนชื่อเว็บตรงนี้
+  description: "เว็บ Anime Ranger X Test Reroll สุ่ม Trait ได้ไม่จำกัดจำนวนครั้ง - ทดสอบดวงของคุณกัน!😁 | Reroll unlimited Traits in Anime Ranger X - test your luck!😁", // สามารถเปลี่ยนคำอธิบายเว็บได้ด้วย (optional)
   icons: {
     icon: [
       { url: '/picture/favicon.ico', type: 'image/x-icon', sizes: 'any' }, // แนะนำให้มีไฟล์ favicon.ico ใน public/
@@ -22,7 +22,7 @@ export const metadata = {
     apple: '/apple-touch-icon.png', // หากคุณมี apple-touch-icon.png ใน public/
   },
   openGraph: {
-    title: 'Anime Ranger X | Test Reroll', // ชื่อที่จะแสดงพร้อมลิงก์ (ควรตรงกับ title หลัก)
+    title: 'Anime Ranger X - Test Reroll', // ชื่อที่จะแสดงพร้อมลิงก์ (ควรตรงกับ title หลัก)
     description: 'Test Reroll feature for Anime Ranger X', // คำอธิบายสั้นๆ
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata = {
         url: '/picture/logo_arx.png',
         width: 800, // (Optional) ความกว้างของรูปภาพ
         height: 600, // (Optional) ความสูงของรูปภาพ
-        alt: 'Anime Ranger X | Test Reroll', // (Optional) คำอธิบายรูปภาพ
+        alt: 'Anime Ranger X Test Reroll', // (Optional) คำอธิบายรูปภาพ
       },
       // คุณสามารถเพิ่มรูปภาพอื่นๆ ได้อีกถ้าต้องการให้มีหลายขนาดหรือหลายตัวเลือก
       // {

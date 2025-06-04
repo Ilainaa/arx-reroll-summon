@@ -131,7 +131,7 @@ export default function Page() {
     setIsRerolling(false); // หยุดการสุ่ม (ถ้ากำลังสุ่มอยู่)
   };
 
-  const navigateTo = (path) => {
+  const navigtaeTo = (path) => {
     router.push(path);
   };
 
